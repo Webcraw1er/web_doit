@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <hr>
+    <form action="submit.php" id="form1">
+        <fieldset>
+            <legend>register</legend>
+                <label>이름: <input type="text" id="user_name" size="20"
+                autofocus placeholder="이름" required></label>
+                <br><br>
+                <label>아이디: <input type="text" id="user_id" size="10" 
+                 placeholder="Type your ID"></label><br>
+                <label>비밀번호: <input type="password" id="user_password" size="10"
+                placeholder="password here" required></label>
+                <br><br>
+                <label for="memo">infos</label>
+                <textarea id="memo" cols="40" rows="5"></textarea><br><br>
+                <label for="bday">birth <select id="bday">
+                    <option value="1" selected>1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                    <option value="4">4월</option>
+                    <option value="5">5월</option>
+                    <option value="6">6월</option>                    
+                </select></label>
+                <input type="submit" value="log-in" action="log-in.php"><br>
+            </fieldset>
+    </form> 
+</body>
+</html>
+
+    <!-- 
+        1) type="image"는 submit와 같은 역할을 한다.
+        src를 사용해서 이미지를 띄울 수 있을 뿐
+        이미지 클릭 시 submit 되는 것.
+
+        2) 큰따옴표와 작으 ㄴ따옴표가 번갈아와야 오류가 없다.
+        연속해서 삼키면 오류 발생.
+
+        3) autofocus: 페이지 로딩시 커서가 저절로 여기에 놓인다. 속성값 없음.
+            placeholder: 옅은 글씨로 쓰인 힌트. 입력 시작시 사라진다.    
+            readonly: 텍스트가 써있어도 사용자가 바꿀 수 없다. 속성값
+                    없이 써도 되고, readonly="true"라고 써도 된다.
+        
+        4) textarea: 라벨도 붙일 수 있고, 가로 세로 폭도 지정 가능
+
+        5) <select>, <option> : 드롭 다운 생성. 
+                selected : 속성값 없음, checkbox나 radio의 checked와 같음.

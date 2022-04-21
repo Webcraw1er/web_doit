@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        /* @font-face {
+            font-family: 'Ostrich';
+            src:    local('Ostrich Sans'),
+                    url('fonts/ostrich-sans-bold.woff') format('woff');
+        } */
+        .wfont {
+            font-family: 'Nanum Pen Script', cursive}
+       body { font-family: "굴림", 맑은 고딕, 돋움; font-size:20px; }
+       p{color:black; font-size:1em }
+       h1{color: brown !important; font-size:3em}
+       p{color: rgba(235, 0, 134, 0.5)} 
+       .accent { color: hsla(197, 60%, 45%, 0.685); font-weight:bolder;  
+        font-size: 1.5em;}
+    </style>
+</head>
+<body>
+    <h1 style="color: hsla(0, 75%, 49%, 0.815)">레드향</h1>
+    <p style="color: #9483eb66; letter-spacing: 0.3em">껍질에 붉은 빛이 돌아 레드향이라 한다.</p>
+    <p style="text-decoration: overline; text-align: right">레드향은 <span class="accent wfont">한라봉</span>과 귤을 교배한 것으로</p>
+    <p style="text-decoration: underline; text-align: center; font-size: 18px; border: red 1px solid; width: 100px; line-height: 24px">일반 귤보다 2배 더 크고, 더 맛있다.</p>
+    <p>for further information click the link &gt;&gt; <a href="03list.html"
+    target="_blank" style="text-decoration:none">link</a> &lt;&lt; </p>
+</body>
+</html>
+
+<!--
+    1. body { font-family: "굴림", 맑은 고딕, 돋움 }
+            에서는 맑은 고딕 글꼴을 바디 전체에 적용하며, 해당 폰트가 없으면
+            작성된 순서대로 적용한다.
+    
+    2. font-size: pt, px로 절대적인 사이즈를 정하건, em, rem 으로 상대 사이즈
+        지정 가능
+            예를 들어 <style> 내에 body { font-size:20px; } 로 써 놓으면, 
+            바디의 디폴트 사이즈는 20픽셀이 됨. 
+            em은 부모의 사이즈를 1em으로 설정한 후, 그걸 기준으로 사이즈 설정.
+
+    3. font-style: italic 등등
+        font-family: 상기해놓음
+        font-weight: normal | bold | bolder | lighter | 100 |... |800| 900
+            여기서 볼드와 볼더는 더 두껍게, 라이터는 더 가늘게
+
+    4. @import url 로 일단 url 좌표를 찍어놓고 연결해 놓는다.
+    
+            웹에서 가져오는 게 아니라 사용자의 폴더에 있는 폰트를 직접 꺼내 쓸떄:
+                @font-face { 에서 제일 먼저 font-family로 대표 폰트를 이름으로 정의
+                    해 놓고, 
+                    그 다음에 local( 에서 해당 폰트가 내부 저장소에 있는지 봄)
+                    그 다음에 없을 때를 대비해서 url()에 주소를 적어놓는다.
+                        이 때는 포맷까지. 
+                        포맷의 예) EOT, WOFF, ttf
+
+                    상단 <style>내 주석 참고
+
+    5. hsla: 원형의 테이블을 기준으로 (색깔, 채도, 명도, 불투명도)로 표현.
+        rgb: #000000 에서 #ffffff 까지. 
+          -> #000      -> #fff    로도 표현 가능.
+        rbda: (0, 255, 255, 0.4) 처럼 그냥 rgb를 표현한 다음 마지막에 
+            불투명도를 제시. hsla도 그냥 hsl에 불투명도만 추가한 방법이다.
+        마지막 방법: 그냥 영문으로 색상이름을 써놓아도 됨.
+    
+    6. line-height: 폰트 사이즈 12픽셀 기준으로 2.0 이면 두배, 
+            200%도 두배, 24px도 당연히 두배.
+
+    7. 두꺼운 line과 얇은 line을 두개 쓰고 싶다면 
+        head 에 .thin_line{ line-height: 0.7; }
+                .thick_line{ line-height: 2.0;}
+
+                으로 선언한 뒤, 각각의 태그에 class로 대충 추가하면 됨.
+            즉, 적당히 알잘딱으로 class 를 사용한 것 뿐.
+
+    8. text-decoration: 하이퍼 링크의 밑줄을 없애주거나, 
+            text-decoration: none | underline | overline;
+                            없앰    밑줄        윗줄
+                이런 식으로 임의로 만든다.
+
+
+    9. letter-spacing: em이나 px로 글자 간 간격 조정
+
+    

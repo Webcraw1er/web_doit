@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+       p{color:black;}
+       h1{color: brown !important;}
+       p{color: blue;} 
+    </style>
+</head>
+<body>
+    <h1 style="color: green">레드향</h1>
+    <p style="color:red">껍질에 붉은 빛이 돌아 레드향이라 한다.</p>
+    <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+    <p>일반 귤보다 2배 더 크고, 더 맛있다.</p>
+</body>
+</html>
+
+<!--
+    1. 사용자 정의 스타일에서 내가 자주 쓰는 style=""같이 속성으로 넣는 것을 인라인 
+    스타일이라고 한다. 이건 보통 html코드를 더럽게 만드므로 지양하고, 
+    그냥 내부 스타일 시트로 head에 
+    태그 이름{
+        선언1;
+        선언2;
+    }
+    로 작성하는 게 베스트이다.
+
+    2. 외부 스타일시트는 style.css로 이름 붙이고, 
+    <link rel="stylesheet" href="style.css"> 를 헤드에 붙인다.
+        rel: relationship
+        
+    3. <p>는 tag.
+        <p>random title</p> 는 하나의 요소(element)
+    
+    4. class를 복수로 지정하려면 class="class1 class2"로 띄어서 사용
+  
+    5. style="margin:auto" 로 적용받는 태그를 중앙에 배치 가능
+
+    6. CSS: cascading style sheet
+        cascading:계단식. 즉 precedance 가 있는 스타일 시트
+        일단 웹을 보는 주체에 의한 상하관계는 사용자 지정> 제작자> 브라우저
+        즉 브라우저에서 자체 지정한 스타일이 최후 순위, 사용자가 manipulate하는
+        스타일이 최우선이라는 것
+
+        다음으로 스타일 적용 범위, 즉 scope
+        !important를 붙인 스타일>인라인> id> class> type(ex h1. ol, td...)
+
+    7. inheritance: 부모의 스타일을 자식이 물려받는 것
+        특히 body는 바디 내의 모든 태그들의 부모 태그이다. 
+        그래서 이것에 스타일 적용하면 하위의 모든 태그의 스타일 세팅 가능.
+
+    

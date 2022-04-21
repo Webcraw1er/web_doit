@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+<head>
+    <title> 13 </title>
+    <meta charset="utf-8">
+    <style>
+    body {padding: 0px; margin:0;}
+    .box1 {box-sizing: border-box; height:100px; width: 300px; 
+        border: 1px solid red; margin: 40px 10px; padding: 20px 10px;
+        box-shadow: -2px -2px 3px 3px red; border-radius: 25px;
+        margin: 0 auto;
+    margin-top: 20px;}
+    .box2 {box-sizing: content-box; height:100px; width: 300px;
+        border: 1px solid red; margin: 40px 10px; padding: 20px 10px;
+        box-shadow: 5px 5px 15px 5px purple; border-radius: 2em; }
+    .box3 {height:100px; width: 500px; border: 10px ridge red; margin: 20px 10px;}
+    .box4 {border: ridge 5px cyan;
+        box-sizing: border-box; height:100px; width:200px; 
+        border-top-left-radius:100px 50px;
+        border-top-right-radius:100px 50px;
+        border-bottom-left-radius:100px 50px;
+        border-bottom-right-radius:100px 50px;
+        text-align:center;
+        padding-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">I have a dream</div>
+    <div class="box2">A great one</div>
+    <div class="box3">Nah I dont actually</div>
+    <div class="box4">hello</div>
+</body>
+</html>
+
+<!--
+    1. 박스 모델도 height width로 크기 조절 가능.
+        근데 박스 두개가 연속적으로 있으면 서로 마진을 
+        잡아먹는다?
+        margin: 20px 10px 이면 세로 20픽셀, 가로 10픽셀
+
+    2. box-sizing: border-box | content-box
+            border-box는 넘겨진 모든 속성을 테두리까지 적용 시키는 걸로
+            content-box는 컨텐츠 영역에 적용시키는 걸로.
+    
+    3. box-shadow: <수평거리> <수직거리> <흐림정도> <번짐정도> <색상>
+                              -
+                            - 0 +
+                              +
+                                        흐림정도: 0부터 시작, 얼마나 진한지
+                                                    번짐 정도: 그림자가 얼마나
+                                                               뒤로 퍼지나
+        으로, box-shadow: +2px -2px 15px 5px blue;
+
+    4. 내가 뭉뚱그려 쓰는 border: 는 사실 border-style, border-width, 
+    border-color 를 한번에 쓴 것
+    border-width 를 쓰면 top-right-bottom- left 순으로 하나하나 다 직접 
+    지정 가능.
+    마찬가지로 border-(top | right | bottom | left)-color로 하나하나 가능.
+    그러니까 두개 밖에 없으면 먼저 top, right이 적용되고, bottom은 top을 따라, 
+    left는 right을 따라 적용된다.
+    하나밖에 없으면 top부터 시작.
+    세 개 밖에 없다고 쳐보자. 그러면 top-right-bottom 이 적용되고, left는 right를 따라감.
+
+
+    5. border 둥글게 하고 싶다면 border-radius: 25px | 2em 등등으로
+        값이 두개 오면 가로 세로 이다.
+                  
+    6. #container  width:600px; margin: 20px auto}
+        로 container라는 영역을 만든다 치자. 
+        그러면 일단 이 컨테이너의 폭은 600픽셀이 되고, 
+        위아래 마진은 4번을 따라 20픽셀이 되며, 
+        양 옆 마진은 전체 화면에서 600픽셀을 뺀 것의 반씩 배정.
+        즉, 전체 컨테이너 자체가 가운데 정렬이 된다.
+
+        여기서 가장 중요한 것: 
+            그냥 margin: 0 auto;
+            만 집어넣으면 그 어떤 박스모델이든 가운데 정렬이 된다
+
+    7. <style> 내에 * {box-sizing: border-box;} 지정하면
+        이건 사실 그냥 디폴트 설정이긴 한데... 모든 
+        요소에 테두리까지 포함한 너빗값을 지정하게 된 것이다.
+        
+    

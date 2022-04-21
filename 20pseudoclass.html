@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+        #container1 a:link, #container1 a:visited {
+            text-decoration-line: none;
+        }
+        #container1 li:hover{
+            background-color: rgba(128, 128, 128, 0.603);
+            font-size: 130%;
+            padding: 32px;
+        }
+        #container1 a:active {
+            background-color: green;
+            color: cyan;
+        }
+        #container1 {
+            display: block;
+            border-bottom: grey dotted 2px;
+            height: 100px;
+
+        }
+        #container1 li {
+            box-sizing: border-box;
+            float: left;
+            font-size: 13px;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            list-style-type: none;
+            border: black 1px dotted;
+            padding: 37px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <nav>
+            <ul>
+                <li><a href="19exercise1.html" target="_blank">이용 안내</a></li>
+                <li><a href="#">객실 소개</a></li>
+                <li><a href="#">예약 방법 및 요금</a></li>
+                <li><a href="#">예약하기</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
+
+<!--
+    1. 콜론 하나(:) : 가상 클래스
+       콜론 두개(::): 가상 요소
+
+        :link    : link that is not visited
+        :visited : link that is already visited
+        :hover   : used when your mouse hovers over an element.
+                 you can change an image or display sub menus
+                 under main menu when hovered onto.
+        :active  : you can set the style when you activate(click)
+                    an image or a link.
+        :focus   : used to change the style when an element is pointed
+                    with either a cursor or a mouse pointer.

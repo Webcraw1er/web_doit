@@ -1,0 +1,68 @@
+#static1 {
+    clear:left;
+    position: static;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+}
+#static2 {
+    position: static;
+    width: 100px;
+    height:100px;
+    background-color: rgb(32, 95, 69);
+    text-align: center;
+}
+#relative1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height:300px;
+    background: url(files_samples/abocado.jpg);
+    background-size: cover;
+    background-color: brown;
+    text-align: center;
+}
+#relative2 {
+    position: relative;
+    left: 10px;
+    top: -50px;
+    width: 100px;
+    height:100px;
+    background-color: cyan;
+    text-align: center;
+}
+#absolute1 {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    width: 100px;
+    height:100px;
+    background-color: violet;
+    text-align: center;
+}
+#fixed1 {
+    position: fixed;
+    right: 500px;
+    top: 300px;
+    width: 100px;
+    height:100px;
+    background-color: #adadad;
+    text-align: center;
+}
+#text1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 3px 2px #000;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+li {
+    display: block;
+    padding: 10px 20px;
+    float: left;
+    background-color: #ccc;
+}

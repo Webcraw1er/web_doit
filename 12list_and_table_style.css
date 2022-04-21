@@ -1,0 +1,8 @@
+.tablelikelist li{border: 1px solid #222; padding: 20px 40px; margin: 5px;}
+.list1{list-style-type: lower-roman;} 
+.list2{list-style-type: square;}
+.list3{list-style-type: circle;}    
+.list4{list-style-type: none;}    
+.list5{list-style-image: url(files_samples/dot.PNG)}
+.table1{ border: 1px solid #222; border-collapse:collapse; caption-side: bottom;}
+.table1 td, th{ border: 1px dotted green; padding:10px; text-align:center;}

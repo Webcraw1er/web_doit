@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+        #grad {
+            border: black 2px dashed;
+            background: linear-gradient(to top left, red, blue); /* to top left 대신
+                                                                        45deg 같은 각도도 가능.*/
+            height: 500px;
+        }
+
+        #grad2 {
+            border: black 2px dashed;
+            background: linear-gradient(45deg, grey, blue 30%, white 60%, cyan); /* to top left 대신
+                                                                        45deg 같은 각도도 가능.*/
+            height: 500px;
+        }
+        #grad3 {
+            border: black 2px dashed;
+            background: radial-gradient(grey, blue 30%, white 60%, cyan);
+            height: 300px;
+            width: 100px;
+            float: left;
+        }
+        #grad4 {
+            border: black 2px dashed;
+            background: radial-gradient(circle closest-side, red, violet 30%, crimson 60%, purple); 
+            height: 500px;
+            width: 800px;
+            float: left;
+        }
+        #grad5 {
+            border: black 2px dashed;
+            background: repeating-radial-gradient(ellipse, red, violet 10px, red 20px); 
+            height: 500px;
+            width: 500px;
+            clear: left;
+        }
+        #grad6 {
+            border: black 2px dashed;
+            background: repeating-linear-gradient(30deg, grey, cyan 20px, grey 40px);
+            height: 300px;
+            width: 500px;
+        }
+        
+        
+    
+    </style>
+</head>
+<body>
+    <div id="grad"><h1 style="color: white; font-size: 300%; padding: 200px; text-align:center; 
+        text-shadow: 5px 5px rgba(255, 255, 255, 0.24)">GRAD1</h1></div>
+    <div id="grad2"><h1 style="color: white; font-size: 300%; padding: 200px; text-align:center; 
+        text-shadow: 5px 5px rgba(255, 255, 255, 0.24)">GRAD2</h1></div>
+    <div id="grad3"><h1 style="color: white; font-size: 300%; padding: 200px; text-align:center; 
+        text-shadow: 5px 5px rgba(255, 255, 255, 0.24)">GRAD3</h1></div>
+    <div id="grad4"><h1 style="color: white; font-size: 300%; padding: 200px; text-align:center; 
+     text-shadow: 5px 5px rgba(255, 255, 255, 0.24)">GRAD4</h1></div>
+     <div id="grad5"><h1 style="color: white; font-size: 300%; padding: 200px; text-align:center; 
+        text-shadow: 5px 5px rgba(255, 255, 255, 0.24)">GRAD5</h1></div>
+    <div id="grad6"><h1 style="color: white; font-size: 300%; padding: 100px; text-align:center; 
+        text-shadow: 5px 5px rgba(255, 255, 255, 0.24)">GRAD6</h1></div>
+</body>
+</html>
+
+<!--`
+    1. 그라데이션은 목적지를 지정. 
+    ex) background: linear-gradient(to top right, blue, white)
+            -> 왼쪽 위에서 오른쪽 아래로, 파란색에서 흰색으로.
+
+    2. 두 가지 이상 색상간의 그라데이션: 
+        background: linear-gradient(to top left, blue, black 30%, cyan 60%, white)
+                    처럼 중지점들을 정해줘야 된다.
+    
+    3. background: radial-gradient(circle, white, yellow 40%, red)
+        circle 명시하지 않으면 요소의 모양을 따라간다.
+        ellipse: 타원
+
+    4. circle 이나 ellipse 옆에 쉼표 없이 그냥 바로 closest-side | closest-corner | farthest-side|farthest-corner
+        로 원의 크기를 정함.

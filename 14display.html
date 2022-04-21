@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+        * { box-sizing: border-box; } 
+        nav ul { list-style: none; }
+        nav ul li { display: inline-block; padding: 20px; margin: 0 20px; 
+            border: solid 1px black;}
+        .img1 { float: left; margin-right: 40px; }
+        #box1 { background: #ffd800; float:left; }
+        #box2 { background: #0094ff; float:left; }
+        #box3 { background: #00ff21;}
+        #box4 { background: #a874ff; clear:left; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </nav>
+    <p>
+        <div id="box1">박스 1</div>
+        <div id="box2">박스 2</div>
+        <div id="box3">박스 3</div>
+        <div id="box4">박스 4</div>
+
+    </p>
+        <img src="files_samples/abocado.jpg" class="img1" width="10%">
+        <p>슈퍼컴퓨터 : 2010년 기준 초당 수백 테라~수 페타플롭스[15]의 속도로 연산을 수행한다. 
+            일반인이 슈퍼컴을 가장 가까이서 접해볼 수 있는 매체는 단연 일기예보. 그 외에도 핵물리 
+            실험 같이 계산량이 상당한 분야에는 꼭 필요하다. 2000년 이후로는 전투기, 헬리콥터, 미사일 
+            등의 무기를 개발할 때 다수의 시제품을 만드는 대신 시뮬레이션으로 대체하는 추세이므로 이
+             슈퍼컴퓨터가 국력의 척도가 될 날도 머지 않았다. 한국에서도 무기뿐만이 아닌 일반 
+             기업에서(물론 비용문제 때문에 대기업 수준이 되어야 가능하다) 휴대폰, 각종 전자제품,
+              자동차 등을 설계할 때에도 슈퍼컴퓨터를 이용한 시뮬레이션을 하고 있다. 아닌 게 아니라 
+              이미 슈퍼컴퓨터가 한 나라의 국력과 과학, 기술력의 척도로 어느 정도 자리매김 하고 있다.
+               현재 세계에서 최신 고성능 슈퍼컴퓨팅 기술 개발과, 장비 도입을 경쟁적으로 시행하는 
+               나라는 미국, 중국, 일본 정도다. 세계 슈퍼컴퓨터 성능 순위가 발표될 때마다 세 나라에서 
+               새롭게 개발한 장비들이 1위를 서로 탈환하고 있는 형편. 반면 한국에서 가장 좋은 
+               슈퍼컴퓨터는 세계 30위권 정도에 위치해 있다. 슈퍼 컴퓨터도 이미 조 단위의 가격을 
+               가지고 있다. 국가 슈퍼컴퓨팅 연구소의 자료에 따르면 일본 이화학연구소의 슈퍼컴퓨터 
+               'K' 는 1조 5천억 원을 들여 구축하였다.[16]</p>
+              
+</body>
+</html>
+
+<!--
+    1. display: block | inline | inline-block | none 
+                block: 인라인을 블록처럼
+                inline: 블록을 인라인처럼
+                inline-block: 둘의 특징을 한번에 가지고 있다.
+                none: 해당 요소를 아예 화면에 표시하지 않는다.
+                
+                block: 줄바꿈을 통해 전후 내용(요소)를 밀어낸다. 
+                        즉, 가로줄에 이거 하나밖에 안오는 것.
+                inline: 그냥 바로 전 요소 옆에 자리가 있다면 그 
+                        자리에 들어간다. 그냥 행 정렬.
+
+    2. float 로 띄워놓고 다음 것도 띄워놓으면 그건 바로 옆에 온다.
+        향후 float 를 해제하고 싶다면 clear:left | right| both 로 클린,
+        
+    3. border-style 종류: none | hidden | solid | dotted | dashed | double | groove | inset | outset | ridge
+        double: 이중선
+        groove: 홈이 파인 것처럼
+        inset, outset: 그냥 있는 줄만 알아
+        ridge: 테두리를 창에서 튀어나온 것처러 ㅁ표시

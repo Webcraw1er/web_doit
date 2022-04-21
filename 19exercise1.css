@@ -1,0 +1,13 @@
+
+        #form1 label {
+            float: left;
+            width: 110px;
+            font-size: 13px;
+        }
+        li {
+            list-style-type: none;
+        }
+        fieldset {
+            border-radius: 10px;
+            border: outset 3px;
+        }

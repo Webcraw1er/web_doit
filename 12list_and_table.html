@@ -1,0 +1,118 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="12list_and_table_style.css">
+        
+    </style>
+</head>
+<body>
+    <h1 style="letter-spacing:0.2em">list1</h1> 
+    <ul class="tablelikelist" style="list-style:none">
+        <li>Justin</li>
+        <li>Tom</li>   
+        <li>Jerry</li>
+    </ul>
+
+    <h1 style="letter-spacing:0.2em">list2</h1> 
+    <ol class="list1">
+        <li>Justin</li>
+        <li>Tom</li>
+        <li>Jerry</li>
+    </ol>
+    
+    <h1 style="letter-spacing:0.2em">list3</h1> 
+    <ol class="list2">
+        <li>Justin</li>
+        <li>Tom</li>
+        <li>Jerry</li>
+    </ol>
+
+    <h1 style="letter-spacing:0.2em">list4</h1> 
+    <ol class="list3">
+        <li>Justin</li>
+        <li>Tom</li>
+        <li>Jerry</li>
+    </ol>
+
+    <h1 style="letter-spacing:0.2em">list5</h1> 
+    <ol class="list4">
+        <li>Justin</li>
+        <li>Tom</li>
+        <li>Jerry</li>
+    </ol>
+
+    <h1 style="letter-spacing:0.2em">list6</h1> 
+    <ol class="list5">
+        <li>Justin</li>
+        <li>Tom</li>
+        <li>Jerry</li>
+    </ol>
+    <!-- --------------------list----------------- -->
+    <!-- --------------------table---------------- -->
+    <br><br>
+    <h1 style="color:green">상품 구성 안내</h1>
+    <table class="table1">
+        <caption>선물용과 가정용 상품 구성</caption>
+        <thead class="thead1">
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">선물용</th>
+                <td>3kg</td>
+                <td>11~16</td>
+                <td>35000</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26</td>
+                <td>52000</td>
+            </tr>
+            <tr>
+                <th rowspan="2">가정용</th>
+                <td>3kg</td>
+                <td>11~16</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26</td>
+                <td>47000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    </body>
+</html>
+
+<!--
+    1. 각 리스트 항목의 앞에 오는 것을 불릿이라고 한다.
+        불릿은 disc, circle, square, decimal, lower-roman, 
+        lower-alpha, none 등 여러가지로 설정 가능.
+
+        불릿은 이미지로도 대체 가능. 
+        이 때는 list-style-type 대신 
+        list-style-image: url() 로 사용.
+
+        이 모든 속성은 사실 list-style로 쓸 수 있다.
+
+    2. 테이블 작성시 모든 셀에 border를 넣으면 border들은
+    두 겹으로 보임. 이게 default 설정이고, 이걸 바꿀 수는 
+    있다. border-collapse: collapse 로 하나의 border로 
+    display 가능
+
+        이 때는 그s냥 table에 한번만 속성으로 주면 된다.
+
+    3. <caption>을 <table> 내에 삽입해서 table 의 제목을
+        디스플레이할 수도 있다.
+         이 때는 caption-side 를 bottom, right, left, top 등 가능.
+        

@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="16layout2.css">
+</head>
+<body>
+    <div id="static1">static1</div>
+    <div id="static2">static2</div>
+        <br><br><br><br><br><br><br><br><br>아래로 스크롤 해보세용<br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="relative1">relative1
+        <div id="absolute1">absolute1</div>
+        <h1 id="text1">ABSOLUTE</h1>
+    </div>
+    <div id="relative2">relative2</div>
+    <div id="fixed1">fixed1</div>
+
+    <nav>
+        <ul style="list-style-type: none;">
+            <li><a id="menu1" href="menu1.html" target="_blank">MENU1</a></li>
+            <li><a id="menu2" href="menu2.html" target="_blank">MENU2</a></li>
+            <li><a id="menu3" href="menu3.html" target="_blank">MENU3</a></li>
+            <li><a id="menu4" href="menu4.html" target="_blank">MENU4</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+<!--
+    1. position: 각 요소가 어디에 배치되는지 정함.
+        static: 문서 흐름에 맞춰서
+        relative: 위치값을 지정할 수 있다.
+                 원래 와야하는 위치를 기준으로
+                 (원래 와야하는 위치란, 이전 박스의
+                 정렬법에 따라 옆/아래 바로 다음위치)
+                 주어진 값만큼 이동함.
+`
+        absolute: 액자식 구성용. 
+            부모 요소 중에 relative를 사용한
+            요소를 기준으로 배치된다.
+            부모중 relative가 없다면 그 상위
+            요소를 찾아본다.
+            그리고 relative를 제일 최근 사용한 요소의
+            안쪽으로 들어간다.
+            즉 액자식으로 만들 때 사용. 
+
+        fixed: 그냥 고정
