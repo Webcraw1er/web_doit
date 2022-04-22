@@ -65,4 +65,41 @@
 
     2. 위아래 중 가운데 정렬하고 싶읍면 padding: 30px 0;
 
+    3. :target   : 링크를 이용해 #randomid로 이동함과 동시에 그 randomid의 
+                    스타일을 바꿀 수 있다.
+                    ex) #intro:target {background-color: grey; color: red;}
+                    어딘가에 <li><a href="#intro"> 인트로(이용안내)</a></li>
+
+                    그리고 밑에 
+                        <div id="intro" class="randomclass">
+                        <h2> 인트로(이용안내)</h2>
+                        ...
+                    
+    4. :checked   : 체크박스에 체크된 것들의 스타일을 바꿀 수 있다.
+                   <label>의 스타일을 바꿔야 하므로, 
+                       #signup input:checked + label 
+                    식으로 사용한다.
+                    이미 알다시피 요소1 + 요소2 하면 요소1 이후 가장 먼저 나오는 
+                    요소2가 선택된다.
+                    그러니까 signup의 input들 중에 checked된 것이 있다면, 
+                    그 형제인 label을 바꿔라 라는 것이 된다.
+                    이게 radio나 checkbox를 list에 넣어 쓸 이유도 된다.
+                    한번에 주르륵 써버리면 input의 형제인 label이 너무 많아지는 것.
+                    그러면 내가 원하는 input을 정확하게 골라낼 수 없다.
+                                     
+    5. :not      : 뭐 하나만 빼고 나머지에 적용하고 싶을 때
+                    ex) input type인 요소들이 text, tel, radio가 있고,
+                    이 중 text 와 tel 에 적용하고 싶을때.
+                    #signup input[type=text], input[type=tel] { }
+                    해도 되지만 코드를 조금 더 직관적으로 하고 용량을 줄이려면
+                    #signup input:not([type=radio]) { }
+                    으로 작성.
+
+    6. :nth-child(n)        : 부모 안에 있는 모든 요소 중에서 n번째 자식 요소를 선택
+       :nth-last-child(n)   : you know what
+       A:nth-of-type(n)     : 부모 안에 있는 A요소 중에서 n번째 요소 선택
+       A:nth-last-of-type(n): you know what
+       
+                    ex) .contents p:nth-of-type(3) { }
+                        -> .contents의 p요소 중에서 세번재 자식 요소에 스타일 적용
 -->
