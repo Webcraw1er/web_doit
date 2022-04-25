@@ -1,0 +1,72 @@
+#framex1 {
+    clear:left;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px black solid;
+}
+#framex2 {
+    clear:left;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px black solid;
+}
+
+body > div:not([class=firstcolumns]) {
+    float: left;
+    position: absolute;
+    left: 100px;
+    height: 100px;
+    width: 100px;
+    border: 1px rgb(20, 192, 60) solid;
+}    
+.firstcolumns {
+    clear:left;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px black solid;
+}
+#movex, #movexy {
+    clear: left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(249, 212, 143);
+    border: red solid 1px;
+}
+#scalex, #scalexy {
+    clear: left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(123, 198, 228);
+    border: red solid 1px;
+}
+#movex:hover {
+    transform: translateX(50px)
+}
+#movexy:active {
+    transform: translate(50px, 50px)
+}
+
+#scalex:hover {
+    transform: scaleX(2);
+}
+#scalexy:active {
+    transform: scale(0.7, 0.7);
+}
+.rotate1:hover{
+    transform: rotate(-40deg);
+}
+
+/* make two bid containers that contains
+each two of the colored boxes, 
+and make them 
+1. float
+2. disl=play: inline;
+3. do nothing about the positioning
+*/

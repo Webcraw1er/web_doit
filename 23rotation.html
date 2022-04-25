@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="23rotation.css">
+
+</head>
+<body>
+    <div id="rotate1box">
+        <div id="rotate1" style="
+        border: black 3px solid; float:left">
+            <img src="files_samples/abocado.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="files_samples/abocado.jpg" alt="noimage">            
+        </div>
+    </div>
+    <div class="origin" id="pers1">
+        <div class="rotatex">
+            <img src="files_samples/abocado.jpg" alt="noimage">            
+        </div>
+    </div>
+    <div class="origin" id="pers2">
+        <div class="rotatex">
+            <img src="files_samples/abocado.jpg" alt="noimage">            
+        </div>
+    </div>
+    <div class="origin" id="pers3">
+        <div class="rotatexyz">
+            <img src="files_samples/abocado.jpg" alt="noimage">            
+        </div>
+    </div>
+    <div class="skeworigin">
+        <div class="skew1 skewbox"></div>
+    </div>
+    <div class="skeworigin">
+        <div class="skew2 skewbox"></div>
+    </div>
+    <div class="skeworigin">
+        <div class="skew3 skewbox"></div>
+    </div>
+
+</body>
+</html>
+
+<!--
+    1. 모든 축(XYZ) 에 관해, 설정된 각도에 따라 회전 가능
+
+    2. 가상 클래스인 :hover 를 붙인 함수에다가
+        perspective 나 transition 을 넣으면 안된다.
+        그냥 새로 정적인 걸 하나 파서 넣어야됨.
+
+        perspective: 시점을 하나 설정.
+        transition: 시간 설정 가능.

@@ -1,0 +1,48 @@
+#rotate1:hover {
+    transform:rotate(20deg);
+}
+
+.origin > div {
+    transition: all 2s;
+}
+
+#pers1 {
+    perspective: 300px;
+}
+#pers2 {
+    perspective: 200px;
+}
+#pers3 {
+    perspective: 400px;
+}
+.rotatex:hover {
+    transform: rotateX(30deg);
+}
+.rotatexyz:hover {
+    transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+}
+.skew1:hover {
+    transform: skewX(30deg);
+}
+.skew2:hover {
+    transform: skewY(15deg);
+}
+.skew3:hover {
+    transform: skew(-25deg, 15deg);
+}
+.skeworigin {
+    height: 200px;
+    width: 200px;
+    border: black 1px solid;
+}
+
+.skewbox {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 2s;
+}
+
+
