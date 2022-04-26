@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="24transition.css">
+</head>
+<body>
+    <div class="box ease">EASE</div>
+    <div class="box linear">LINEAR</div>
+    <div class="box easein">EASE-in</div>
+    <div class="box easeout">EASE-out</div>
+    <div class="box easeinout">EASE-in-out</div>
+    <div class="box2 ease">BOX2</div>
+</body>
+</html>
+
+<!--
+    1. transitions are used to manipulate 
+        the time and actions taken when elements
+        are altered.
+    
+!!  2. transition-property: all;    : 해당 요소의
+            모든 속성에 transition 적용
+
+        transition-property: background-color   : 해당
+        요소의 배경색에 적용
+        transition-property: width, height      : 해당 
+        요소의 너비와 높이에 적용
+
+    3. transition-duration : 바뀌는 시간
+            transition-property: width, height; 이면
+            transition-duration: 2s, 1s; 로 각각 
+                                        지정 가능.
+
+        이 떄는 scale() 쓰면 안됨.
+        그냥 .box:hover {
+                width: 200px;
+                height: 100px;
+                }   선언해야 된다.
+
+    4. transition-timing-function : written above.
+
+    5. transition-delay : wait for the time given 
+        
+    6. all these can be specified at once with 
+        "transition: "
+    
+    7. transition- property 를 지정하지 않았다면 
+        기본값인 all로 설정된다.
+        

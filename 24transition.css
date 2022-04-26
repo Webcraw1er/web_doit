@@ -1,0 +1,61 @@
+.box{
+    float: left;
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    transition-property: width, height;
+    transition-duration: 1s, 1.5s;
+    color: cyan;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+    margin: 10px;
+}
+.box:hover {
+    width: 100px;
+    height: 400px;
+}
+.ease{
+    transition-timing-function: ease;
+}
+.linear{
+    transition-timing-function: linear;
+}
+
+.easein{
+    transition-timing-function: ease-in;
+}
+.easeout{
+    transition-timing-function: ease-out;
+}
+.easeinout{
+    transition-timing-function: ease-in-out;
+}
+
+.box2{
+    clear: left;
+    float: left;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(25, 219, 99);
+    transition-duration: 1s;
+    color: cyan;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 90px;
+    margin: 10px;
+}
+
+.box2:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(90deg);
+    line-height: 190px;
+    font-size: 30px;
+}
