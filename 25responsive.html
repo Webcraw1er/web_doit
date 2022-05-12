@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="25responsive.css">
+</head>
+<body>
+    <h1>Hello</h1>
+
+</body>
+</html>
+
+
+<!--
+    definiton: 실제 웹 문서의 내용이 화면상에 나타나는 영역
+
+    1. 뷰포트가 중요한 이유: 눈에 보이는 부분이 어떻게 표시되는지 정한다.
+            모든 것은 뷰포트에 따르게 된다.
+    <meta name= "viewport" content= "attribute1= value1, attribute2= value2 ... ">   
+    
+    <attributes of viewport>
+    <attributes>    <description>           <available values>          <default>
+    width           the width of the vp     device-width or pixels      default setting of browser
+    height          the height of the vp    device-height or pixels     default setting of the browser
+    user-scalable   확대/축소 가능 여부      yes / no                    yes
+    initial scale   초기 확대/축소 값        1~10                        1
+    orientation     화면 가로/세로          landscape(가로)portrait(세로)  landscape
+
+    그 외에도 min-height, max-height, min-width, max-width,
+    device-height, devide-width, min-device-width, max-device-height 등등이 있다.
+
+
+    가장 basic한 세팅: 
+        <meta name="viewport" content="width= device-width, initial-scale= 1">
+   
+    2. scales of viewports
+        vw: 1vw is worth 1/100 of the total viewport.
+        vh:     "
+        vmin:   1/100 of the smaller one; in either height or width.
+        vmax:   "            bigger
+            vmax and vmin are usaeful when it comes to mobile devices, because if you lean it 
+            the bigger side keeps changing.
+
+    3. 뷰포트 설정해서 보는 법: developers.naver.com 사이트 접속 후, f12로 개발자 도구 창 열고, 제일 
+        왼쪽에서 두번째 아이콘 클릭하면 뷰포트 크기 설정 가능한 창이 나옴.
+
+    4. 미디어 쿼리의 기본형:
+        @media [only | not ] 미디어 유형 [and 조건] * [and 조건]
+            only: 미디어 쿼리를 지원하지 않는 웹에서는 미디어 쿼리를 무시
+            not:  다음에 지정하는 미디어 유형 제외. 
+                ex) not tv  -> TV를 제외한 미디어 유형에 적용
+            
+        미디어 쿼리의 예 ex)
+        @media screen and (min-width: 768px) and (max-width: 1439px) { }
+            -> 스크린이면서 최소 길이가 768이고, 최대길이가 1439인 것들만 적용.
+                이 경우 """"중단점""""은 길이 768, 길이 1439이다.
+        그리고 만약 화면용 스타일과 인쇄용 스타일을 따로 만들려면: 
+        @media screen { }
+        @media print { }
+
+
+-->
