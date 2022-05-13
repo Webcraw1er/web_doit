@@ -1,8 +1,8 @@
-<html>
+<html lang="ko">
 <head>
     <title></title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="25responsive.css">
+    <link rel="stylesheet" media="screen" href="25responsive.css">
 </head>
 <body>
     <h1>Hello</h1>
@@ -54,9 +54,29 @@
         @media screen and (min-width: 768px) and (max-width: 1439px) { }
             -> 스크린이면서 최소 길이가 768이고, 최대길이가 1439인 것들만 적용.
                 이 경우 """"중단점""""은 길이 768, 길이 1439이다.
+
         그리고 만약 화면용 스타일과 인쇄용 스타일을 따로 만들려면: 
         @media screen { }
         @media print { }
 
-
--->
+    5. 외부에서 @media 갖고 오는 방법: <link> 태그를 통해.
+            <link rel="stylesheet" media="screen" href="css/scren.css" >
+        
+    6. style 문의 선언은 두 가지 방법이 있다.
+        first:
+            <style media= "<condition>"> {          <style media="screen and (max-width: 320px)">
+                <declaration of the style>              body {
+            }                                               background-color: orange;
+            </style>                                    }
+                                                    </style>
+        second:                                     
+            <style>                                 <style>
+                @media <condition> {                    @media screen and (max-width:320px) {
+                    <declaration of the style>              body {
+                }                                               background-color: orange;
+            </style>                                        }
+                                                        }
+                                                    </style>
+        
+        걍 두번째거 써라. 첫번째는 별로임/
+                                                -->

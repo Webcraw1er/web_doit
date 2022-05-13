@@ -1,5 +1,28 @@
 h1 {
-    font-size: 5vw;
+    font-size: 5vmin;
     color: red;
     text-align: center;
+}
+
+body {
+    background: url(files_samples/abocado.jpg) no-repeat fixed;
+    background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        background: url(files_samples/banana.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        background: url(files_samples/kiwi.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 570px) {
+    body {
+        background: url(files_samples/abocado.jpg) no-repeat fixed;
+        background-size: 20% cover;
+    }
 }
