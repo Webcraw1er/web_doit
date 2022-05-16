@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>26</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="27flexboxlayout2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box fl1"><h1>1</h1></div>
+        <div class="box fl2"><h1>2</h1></div>
+        <div class="box fl3"><h1>3</h1></div>
+        <div class="box fl4"><h1>4</h1></div>
+    </div>
+
+    <div class="container2">
+        <div class="boxx flex1">
+            <div class="boxxx"><h1>1</h1></div>
+            <div class="boxxx"><h1>2</h1></div>
+            <div class="boxxx"><h1>3</h1></div>
+            <div class="boxxx"><h1>4</h1></div>
+        </div>
+        <div class="boxx flex2">
+            <div class="boxxx"><h1>1</h1></div>
+            <div class="boxxx"><h1>2</h1></div>
+            <div class="boxxx"><h1>3</h1></div>
+            <div class="boxxx"><h1>4</h1></div>
+        </div>
+        <div class="boxx flex3">
+            <div class="boxxx"><h1>1</h1></div>
+            <div class="boxxx"><h1>2</h1></div>
+            <div class="boxxx"><h1>3</h1></div>
+            <div class="boxxx"><h1>4</h1></div>
+        </div>
+        <div class="boxx flex4">
+            <div class="boxxx"><h1>1</h1></div>
+            <div class="boxxx"><h1>2</h1></div>
+            <div class="boxxx"><h1>3</h1></div>
+            <div class="boxxx"><h1>4</h1></div>
+        </div>
+        <div class="boxx flex5">
+            <div class="boxxx"><h1>1</h1></div>
+            <div class="boxxx"><h1>2</h1></div>
+            <div class="boxxx"><h1>3</h1></div>
+            <div class="boxxx"><h1>4</h1></div>
+        </div>
+        <div class="boxx flex6">
+            <div class="boxxx"><h1>1</h1></div>
+            <div class="boxxx"><h1>2</h1></div>
+            <div class="boxxx"><h1>3</h1></div>
+            <div class="boxxx"><h1>4</h1></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+1. align-self: 일단 일괄적으로 스타일 적용해서 배열하고,
+                그 다음 하나씩 각각 고유의 배열을
+                하고 싶을 때 사용.
+        below are the properties
+        flex-start      : 교자축의 시작점에 맞게
+        flex-end        : 교자축의 끝점에 맞게
+        center          : 중앙에 맞게
+        space-between   : 첫, 끝 항목을 교자축의 끝에 맞추고
+                        나머지는 같으 ㄴ간격으로 배열
+        space-around    : 모든 항목을 교자축에 같은 간격으로
+        stretch         : 플렉스 항목을 늘려서 교자축에 가득 차도록 
+
+2. align-content: align-items는 교자축이 한줄일 때 
+                쓰는 것.
+                교자축이 여러개일 때 쓰는게 바로 
+                align-content!
+
+        flex-start
+        flex-end
+        center
+        space-between
+        space-around
+        stretch: 다른 건 다 이전과 사용방법이 같고,
+                얘는 그냥 다 쭉 내려서 빈틈을 메꾸는 것.
+
+요컨대 그냥 display: flex 박아버리면 모든 
+배열을 flex할 수 잇따는 말씀
+
+
+
+
+-->

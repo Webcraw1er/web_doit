@@ -1,0 +1,114 @@
+<!-- 
+1. 그리드 레이아웃의 장점: 시각적으로 안정
+                        요소를 자유롭게 배치
+                            -<div> 나 <P> 같은 블록 레벨 요소는 한 줄에 하나씩만 배치 가능. 
+                            그리드 쓰면 자유롭게 배치 가능하다.
+                        업데이트가 용이
+
+2. flexable box layout: 수평이나 수직 중 하나의 방향을 정해 박스 배치.
+                        수평인 경우: 옆으로 옆으로 나열하다가 공간이 없어지면 아래칸으로.
+                        수직인 경우: vice versa
+    css grid layout:    블록을 끼워 맞추듯이, 자유롭게 수평과 수직을 오가며 배치.
+
+3. 플렉스 그리드 구성: 주추(가로), 교자축(세로), 플렉스 컨테이너(부모 박스), 플렉스 항목(자식 박스)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>26</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="26flexboxlayout.css">
+</head>
+<body>
+    <div id="fc1" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p>
+    </div> 
+    <div id="fc2" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p>
+    </div> 
+    <div id="fc3" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p>
+    </div> 
+    <div id="fc4" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p>
+    </div> 
+    <div id="fc5" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p>
+    </div> 
+    <div id="fc6" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p>
+    </div> 
+    <div id="fc7" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p>
+    </div> 
+    <div id="fc8" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p>
+    </div> 
+    <div id="fc9" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc10" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc11" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc12" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc13" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc14" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc15" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc16" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+    <div id="fc17" class="box flexcontainer">
+        <p>1</p><p>2</p><p style="font-size: 40px">3</p><p>4</p>
+    </div> 
+    <div id="fc18" class="box flexcontainer">
+        <p>1</p><p>2</p><p>3</p><p>4</p>
+    </div> 
+</body>
+</html>
+
+<!--
+1. display: flex | inline-flex"
+            블록레벨    인라인 레벨
+        플렉스 레이아웃을 만들려면 컨텐츠를 플렉스 레이아웃으로 묶어줘야 되는데, 
+        특정 요소(span, div) 등이 플렉스 컨테이너로 동작하기 위해선 display 속성이 있어야 한다.
+
+2. flex-direction: row | row-reverse | column | column-reverse"
+                주축을 가로로, 왼쪽부터 오른쪽으로
+                        주축을 가로로, 오른쪽부터 왼쪽으로
+                                        주축을 세로로(이 때 교자축이 주축이 되는게 아니다.
+                                                    주축이 세로가 되고 교자축이 가로가 될 뿐.) 
+
+3. flex-wrap: nowrap | wrap | wrap-reverse
+              모든 항목 한줄에. 기본값.
+                      여러줄에 표시.
+                              여러줄, 시작점 끝점 바뀜.
+
+4. flex-flow:"row nowrap" 처럼 두개 한번에 기술.
+
+5. justify-content: flex-start | flex-end | center | space-between | space-around
+                    주축의 시작점
+                                주축의 끝점
+                                            주축의 중앙
+                                                    첫번째와 끝 양쪽 끝에 배치후 나머지는 그 사이에 같은 간격으로
+                                                                     모든 항목을 주축에 같은 간격으로           
+
+6. align-items: flex-start | flex-end | center | baseline | stretch
+                교자축의 시작점
+                                                문자 기준선에 맞게
+                                                            항목을 늘려 교자축에 가득차게
+
+
+                                                                    -->

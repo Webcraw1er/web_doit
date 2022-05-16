@@ -1,0 +1,74 @@
+.box {
+    border: 1px solid black;
+}
+.flexcontainer {
+    display: flex;
+    margin: 10px auto;
+}
+p {
+    margin: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 200px;
+    padding: 20px 20px;
+}
+#fc1 {
+    flex-direction: row;
+}
+#fc2 {
+    flex-direction: row-reverse;
+}
+#fc3 {
+    flex-direction: column;
+}
+#fc4 {
+    flex-direction: column-reverse;
+}
+#fc5 {
+    flex-wrap: nowrap;
+}
+#fc6 {
+    flex-wrap: wrap;
+}
+#fc7 {
+    flex-wrap: wrap-reverse;
+}
+#fc8 {
+    flex-flow: row nowrap;
+}
+#fc9 {
+    justify-content: flex-start
+}
+#fc10 {
+    justify-content: flex-end
+}
+#fc11 {
+    justify-content: center
+}
+#fc12 {
+    justify-content: space-between
+}
+#fc13 {
+    justify-content: space-around
+}
+#fc14 {
+    height: 300px;
+    align-items: flex-start
+}
+#fc15 {
+    height: 300px;
+    align-items: flex-end
+}
+#fc16 {
+    height: 300px;
+    align-items: center
+}
+#fc17 {
+    height: 300px;
+    align-items: baseline
+}
+#fc17 {
+    height: 300px;
+    align-items: stretch
+}
