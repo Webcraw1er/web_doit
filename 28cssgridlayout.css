@@ -1,0 +1,44 @@
+ #container {
+     display: grid;
+     grid-template-columns: 200px 200px 200px;
+     grid-template-rows: 200px 200px;
+ }
+
+.items {
+    text-align: center;
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
+
+}
+
+ .items:nth-child(odd) {
+    background-color: grey;
+ }
+
+ h1 {
+    margin: 30px;
+ }
+
+
+ #container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-content: center;
+}
+ /*
+여기서 .item 의 차일드를 지정하여 nth-child()를 
+쓸 수 있었던 이유: 
+    이미 공부했듯이, id는 고유한 반면 class는 여러
+    요소들에 동시에 부여 가능하다. 그러니까 class는 
+    말하자면 parent의 역할도 하는 셈이다.
+
+
+
+ */
+
+
+ 

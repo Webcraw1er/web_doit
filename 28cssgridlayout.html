@@ -18,7 +18,27 @@
 </head>
 <body>
     <div id="container">
-        
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+    </div>
+<p></p>
+    <div id="container2">
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
+        <div class="items"><h1>Lorum, ipsum dolor</h1></div>
     </div>
 </body>
 </html>
@@ -31,8 +51,32 @@
         just like flex box layout, the grid also 
         has an initializing attribute, "grid".
 
+2. to divide grid, you need either
+    grid-template-columns/ grid-template-rows.
+    the former is about the width, and the latter height.
 
+    if you specify the px, it will do exactly what its told.
+    if given the fr, it will divide the whole screen accordingly.
+    you can use repaet() function to simplify grid-template attr.
+        ex) grid-template-rows: 1fr 1fr 1fr;
+        ==  grid-template-rows: repeat(3, 1fr);
+    
+    the minmax() funtion detrmines the minimum
+    and the maximum height of each item respectively,
+    and it will distribute spaces of the screen 
+    to the items.
 
+3. 위의 repeat 함수에 대해 더 알아보자.
+    repeat(auto-fit, minmax(300px, 400px)) 하면
+    화면을 꽉 채운다.
+    auto-fit: 화면이 더 넓으면 남는 공간 없이 꽉 채움.
+    auto-fill: 화면이 더 넓으면 왼쪽의 공백을 그대로 둠.
 
+    minmax() 는 최소, 최댓값이 차례로 오기 떄문에 
+    값을 하나만 쓰면 그냥 최대가 무한으로 돼서, 자동으로
+    블럭레벨이 된다.
+
+4. grid-row-gap 이나 grid-gap 으로 그리드 사이 조절 가능.
+    grid gap 에는 값이 두개 오는데, 전자가 row 후자가 column
 
 -->
